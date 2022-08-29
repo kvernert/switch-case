@@ -4,11 +4,19 @@
     */
 
     //ENTRADA
+    const numero = Number(prompt("Informe um número inteiro: "));
+    let resultado;
 
     
     //PROCESSAMENTO
-
+   switch (numero % 2){
+    case 0:
+        resultado = "O número é par";
+        break;
+      default :
+      resultado = "O número não é par"  
+   }
     
     //SAÍDA
-
+    document.write(resultado);
 </script>

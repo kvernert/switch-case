@@ -10,5 +10,34 @@
     */
 
     //ENTRADA
+    const telefonou = parseInt(prompt("Telefonou para a vítima?(0-Não | 1-Sim"));
+    const esteveLocal = parseInt(prompt("Esteve no local do crime?(0-Não | 1-Sim"));
+    const moraPerto = parseInt(prompt("Mora perto da vítima?(0-Não | 1-Sim"));
+    const devia = parseInt(prompt("Devia para a vítima?(0-Não | 1-Sim"));
+    const trabalhou = parseInt(prompt("Já trabalhou com a vítima?(0-Não | 1-Sim"));
+
+    //PROCESSAMENTO 
+    const pontuacaoCrime = telefonou + esteveLocal + moraPerto + devia + trabalhou;
+    let resultado;
+
+    switch(pontuacaoCrime){
+        case 0:
+            case 1:
+            resultado = "INOCENTE";
+            break;
+            case 2:
+                resultado = "SUSPEITO";
+                break;
+                case 3:
+                    case 4:
+                        resultado = "CÚMPLICE";
+                        break;
+                        case 5:
+                            resultado = "ASSASINO";
+    }
+    
+    //SAÍDA
+    document.write(`O cívil é considerado ${resultado}!`)
+
 
 </script>

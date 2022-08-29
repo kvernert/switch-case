@@ -10,7 +10,8 @@
     // ENTRADA
     const idadeCao = parseInt(prompt("Informe a idade do seu cão:"));
     const porteCao = prompt("Qual o porte do seu cão? (P-Pequeno | M-Médio | G-Grande)").toUpperCase();
-    let fator;
+    let fator = 0;
+
     switch (porteCao) {
         case "P":
             fator = 5;
@@ -27,4 +28,5 @@
     }
     
     const idadeFinal = idadeCao * fator;
+    document.write(`O seu cão tem a idade de ${idadeFinal}`);
     </script>
