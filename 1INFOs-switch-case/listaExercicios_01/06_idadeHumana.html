@@ -28,5 +28,12 @@
     }
     
     const idadeFinal = idadeCao * fator;
-    document.write(`O seu cão tem a idade de ${idadeFinal}`);
+    switch (fator) {
+        case 0:
+            document.write("Porte do cão inválido");
+            break;
+        default:
+        document.write(`O seu cão tem a idade de ${idadeFinal}`);
+            break;
+    }
     </script>
